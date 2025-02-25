@@ -1,4 +1,4 @@
-package spell.check.service;
+package spellcheck.service;
 
 import org.springframework.stereotype.Service;
 import java.io.IOException;
@@ -9,13 +9,13 @@ import java.net.URL;
 public class SpellCheckService {
 
     public String checkWord(String word) {
-        String urlStr = "https://api.dictionaryapi.dev/api/v2/entries/en/" + word;
+        String urlString = "https://api.dictionaryapi.dev/api/v2/entries/en/" + word;
         try {
-            URL url = new URL(urlStr);
-            HttpURLConnection conn = (HttpURLConnection) url.openConnection();
-            conn.setRequestMethod("GET");
+            URL url = new URL(urlString);
+            HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+            connection.setRequestMethod("GET");
 
-            int responseCode = conn.getResponseCode();
+            int responseCode = connection.getResponseCode();
             if (responseCode == 200) {
                 return "Корректно";
             } else {

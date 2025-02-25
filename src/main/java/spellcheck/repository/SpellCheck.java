@@ -1,4 +1,4 @@
-package spell.check.repository;
+package spellcheck.repository;
 
 public class SpellCheck {
     //none basedate :(

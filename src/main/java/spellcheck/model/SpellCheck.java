@@ -1,4 +1,4 @@
-package spell.check.model;
+package spellcheck.model;
 
 public class SpellCheck {
 
@@ -9,7 +9,7 @@ public class SpellCheck {
 
     public SpellCheck() {}
 
-    public void initialize(String word, String status, String error, String apiMessage) {
+    public SpellCheck(String word, String status, String error, String apiMessage) {
         this.word = word;
         this.status = status;
         this.error = error;

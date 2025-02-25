@@ -1,4 +1,4 @@
-package spell.check;
+package spellcheck;
 
 public class SpellCheckStart {
     public static void main(String[] args) {
