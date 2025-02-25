@@ -1,6 +1,6 @@
-package spell.check.ch;
+package spell.check;
 
-public class Spell_Check {
+public class SpellCheckStart {
     public static void main(String[] args) {
         System.out.println("Приложение запущено!");
     }

@@ -1,4 +1,4 @@
-package spell.check.ch.service;
+package spell.check.service;
 
 import org.springframework.stereotype.Service;
 import java.io.IOException;
@@ -6,7 +6,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 @Service
-public class Spell_Check_serv {
+public class SpellCheckService {
 
     public String checkWord(String word) {
         String urlStr = "https://api.dictionaryapi.dev/api/v2/entries/en/" + word;

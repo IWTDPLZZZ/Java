@@ -1,15 +1,15 @@
-package spell.check.ch.model;
+package spell.check.model;
 
-public class Spell_Check_init {
+public class SpellCheck {
 
     private String word;
     private String status;
     private String error;
     private String apiMessage;
 
-    public Spell_Check_init() {}
+    public SpellCheck() {}
 
-    public void init(String word, String status, String error, String apiMessage) {
+    public void initialize(String word, String status, String error, String apiMessage) {
         this.word = word;
         this.status = status;
         this.error = error;
